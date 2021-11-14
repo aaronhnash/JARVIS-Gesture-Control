@@ -10,7 +10,7 @@ training_ring = 0
 training_pinky = 0
 
 count = 0
-samples = 75
+samples = 200
 
 class Trainer():
     def __init__(self, csv):
@@ -124,6 +124,36 @@ class Trainer():
             self.training_middle = 0
             self.training_ring = 0
             self.training_pinky = 0
+        elif case ==7:
+            self.training_thumb = 0
+            self.training_index = 0
+            self.training_middle = 1
+            self.training_ring = 0
+            self.training_pinky = 0
+        elif case ==8:
+            self.training_thumb = 0
+            self.training_index = 0
+            self.training_middle = 0
+            self.training_ring = 1
+            self.training_pinky = 0
+        elif case ==9:
+            self.training_thumb = 0
+            self.training_index = 0
+            self.training_middle = 0
+            self.training_ring = 0
+            self.training_pinky = 1
+        elif case ==10:
+            self.training_thumb = 0
+            self.training_index = 0
+            self.training_middle = 0
+            self.training_ring = 1
+            self.training_pinky = 1
+        elif case ==11:
+            self.training_thumb = 0
+            self.training_index = 0
+            self.training_middle = 1
+            self.training_ring = 1
+            self.training_pinky = 1
         
         print(self.training_thumb, self.training_index, self.training_middle, self.training_ring, self.training_pinky)
 
@@ -148,11 +178,11 @@ loading_csv = pd.read_csv("template.csv")
 
 trainer = Trainer(loading_csv)
 n = 0
-max = 6
+max = 11
 trainer.set_case(n)
 input("Press enter to continue...")
 while max >= n:
-    time.sleep(0.001)
+    time.sleep(0.000001)
     tracker.update()
     if tracker.right_hand is not None:
         if count <= samples:

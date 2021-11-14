@@ -1,0 +1,3 @@
+Everything else is bugged, but I have a working pinky!!!!
+
+Using a more accurate detection model.

@@ -23,6 +23,9 @@
 * [Web Site Name](http://url.link.goes.here)
 https://docs.python.org/3/library/multiprocessing.html
 https://stackoverflow.com/questions/29571671/basic-multiprocessing-with-while-loop
+https://www.springboard.com/blog/ai-machine-learning/beginners-guide-neural-network-in-python-scikit-learn-0-18/
+https://thinkingneuron.com/how-to-use-artificial-neural-networks-for-classification-in-python/
+https://stackoverflow.com/questions/10592605/save-classifier-to-disk-in-scikit-learn#11169797
 
 # Future Work
 
